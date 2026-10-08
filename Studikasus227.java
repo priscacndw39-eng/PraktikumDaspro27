@@ -26,6 +26,16 @@ public class Studikasus227 {
                     System.out.println("Status : Dokumen lengkap, tetapi bukan Juara 1, 2, atau 3. "
                             + "Dana penghargaan tidak diberikan.");
                 }
+            } else if (jenis.equalsIgnoreCase("PKM")) {
+                if (pendanaan == 1) {
+                    System.out.println("Status : Dokumen lengkap. PKM lolos pendanaan, "
+                            + "dana penghargaan DIBERIKAN.");
+                } else {
+                    System.out.println("Status : Dokumen lengkap, tetapi PKM tidak lolos pendanaan. "
+                            + "Dana penghargaan tidak diberikan.");
+                }
+            } else {
+                System.out.println("Status : Kegiatan Lainnya tidak memperoleh dana penghargaan.");
             }
         } else {
             int kurang = 4 - jumlahDokumen;
@@ -35,5 +45,4 @@ public class Studikasus227 {
 
         sc.close();
     }
-
 }
